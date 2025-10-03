@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Custom Styles */
+@theme {
+  --font-bellefair: "Bellefair", serif;
+}
