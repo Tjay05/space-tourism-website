@@ -2,5 +2,12 @@
 
 /* Custom Styles */
 @theme {
+  /* fonts */
   --font-bellefair: "Bellefair", serif;
+  --font-barlow-regular: "Barlow", sans-serif;
+  --font-barlow-condensed: "Barlow Condensed", sans-serif;
+
+  /* colors */
+  --color-darkblue: #0B0D17;
+  --color-lightblue: #D0D6F9;
 }
