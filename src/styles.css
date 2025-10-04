@@ -11,3 +11,10 @@
   --color-darkblue: #0B0D17;
   --color-lightblue: #D0D6F9;
 }
+
+@layer components {
+  .rule {
+    width: min(90%, 1200px);
+    margin-inline: auto;
+  }
+}
