@@ -4,34 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google fonts import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/src/output.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="bg-[url(/starter-code/assets/destination/background-destination-mobile.jpg)] bg-cover bg-no-repeat">
+  <header class="relative">
+    <nav class="rule py-6 flex items-center justify-between">
+      <img src="assets/shared/logo.svg" alt="logo" class="">
+      <button class="z-99">
+        <img src="assets/shared/icon-hamburger.svg" alt="hamburger" class="">
+      </button>
+      <div class="absolute hidden top-0 right-0 h-[100vh] w-3/4 bg-red-300">
+        <ul class="text-white font-barlow-regular pt-24 pl-6 text-base">
+          <li class="">
+            <span class="">00</span>
+            <a href="index.html" class="uppercase">Home</a>
+          </li>
+          <li class="">
+            <span class="">01</span>
+            <a href="destination-moon.html" class="uppercase">Destination</a>
+          </li>
+          <li class="">
+            <span class="">02</span>
+            <a href="crew-commander.html" class="uppercase">Crew</a>
+          </li>
+          <li class="">
+            <span class="">03</span>
+            <a href="technology-vehicle.html" class="uppercase">Technology</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Titan
-
-  The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.
-
-  Avg. distance
-  1.6 bil. km
-
-  Est. travel time
-  7 years
+  <main class="rule text-center flex flex-col items-center py-6">
+    <div class="flex flex-col items-center">
+      <p class="uppercase text-white font-bellefair flex gap-x-4">
+        <span class="font-barlow-condensed font-semibold">01</span> 
+        Pick your destination
+      </p>
+      <img src="assets/destination/image-titan.webp" alt="titan" class="my-12 w-1/2"/>
+    </div>
+    <div class="place-self-start w-full">
+      <nav class="w-full">
+        <ul class="flex w-3/4 mx-auto justify-around items-center text-lightblue font-barlow-condensed">
+          <li><a href="destination-moon.html" class=" pb-2 border-b-2 border-transparent">Moon</a></li>
+          <li><a href="destination-mars.html" class=" pb-2 border-b-2 border-transparent">Mars</a></li>
+          <li><a href="destination-europa.html" class=" pb-2 border-b-2 border-transparent">Europa</a></li>
+          <li><a href="destination-titan.html" class="text-white pb-2 border-b-2 border-white">Titan</a></li>
+        </ul>
+      </nav>
+      <section class="">
+        <h2 class="text-white uppercase text-6xl font-bellefair my-7">Titan</h2>
+        <p class="text-sm/6 text-lightblue font-barlow-regular border-b-white border-b pb-5">
+          The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+        </p>
+        <footer class="flex flex-col mt-5 mb-3 uppercase gap-y-6">
+          <div class="flex flex-col gap-y-2 items-center">
+            <p class="text-lightblue font-barlow-condensed text-sm">Avg. distance</p>
+            <span class="text-white font-bellefair text-2xl">1.6 bil. km</span>
+          </div>
+          <div class="flex flex-col gap-y-2 items-center">
+            <p class="text-lightblue font-barlow-condensed text-sm">Est. travel time</p>
+            <span class="text-white font-bellefair text-2xl">7 years</span>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </main>
+  
 </body>
 </html>
