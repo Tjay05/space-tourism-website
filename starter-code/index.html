@@ -15,28 +15,28 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body class="bg-[url(/starter-code/assets/home/background-home-mobile.jpg)] bg-cover bg-no-repeat">
-  <header class="relative font-barlow-condensed">
+  <header class="sticky top-0 font-barlow-condensed">
     <nav class="rule py-6 flex items-center justify-between">
       <img src="assets/shared/logo.svg" alt="logo" class="">
       <button class="z-99">
-        <img src="assets/shared/icon-hamburger.svg" alt="hamburger" class="">
+        <img id="hamburger" src="assets/shared/icon-hamburger.svg" alt="hamburger" class="">
       </button>
-      <div class="absolute  top-0 right-0 h-[100vh] w-3/4 bg-red-300">
-        <ul class="text-white font-barlow-regular pt-24 pl-6 text-base">
-          <li class="">
-            <span class="">00</span>
-            <a href="/" class="uppercase">Home</a>
+      <div id="nav-menu" class="fixed bottom-0 hidden top-0 right-0 w-[67%] bg-white/1 backdrop-blur-xl z-9">
+        <ul class="flex mt-10 flex-col gap-y-6 text-white font-barlow-condensed pt-24 pl-6 text-base tracking-widest">
+          <li class="border-r-2 flex gap-x-4">
+            <span class="font-bold">00</span>
+            <a href="index.html" class="uppercase">Home</a>
           </li>
-          <li class="">
-            <span class="">01</span>
+          <li class="flex gap-x-4">
+            <span class="font-bold">01</span>
             <a href="destination-moon.html" class="uppercase">Destination</a>
           </li>
-          <li class="">
-            <span class="">02</span>
+          <li class="flex gap-x-4">
+            <span class="font-bold">02</span>
             <a href="crew-commander.html" class="uppercase">Crew</a>
           </li>
-          <li class="">
-            <span class="">03</span>
+          <li class="flex gap-x-4">
+            <span class="font-bold">03</span>
             <a href="technology-vehicle.html" class="uppercase">Technology</a>
           </li>
         </ul>
@@ -55,5 +55,6 @@
     <a href="" class="rounded-full bg-white px-8 py-14 uppercase font-bellefair text-lg mt-32">Explore</a>
   </main>
 
-  </body>>
+  <script defer src="index.js"></script>
+</body>>
 </html>
