@@ -14,7 +14,7 @@
 
 @layer components {
   .rule {
-    width: min(90%, 1200px);
+    width: 90%;
     margin-inline: auto;
   }
 }

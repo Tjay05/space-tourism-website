@@ -4,11 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google fonts import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/src/output.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="bg-[url(/starter-code/assets/crew/background-crew-mobile.jpg)] bg-cover bg-no-repeat">
+  <header class="relative font-barlow-condensed">
+    <nav class="rule py-6 flex items-center justify-between">
+      <img src="assets/shared/logo.svg" alt="logo" class="">
+      <button class="z-99">
+        <img src="assets/shared/icon-hamburger.svg" alt="hamburger" class="">
+      </button>
+      <div class="absolute hidden top-0 right-0 h-[100vh] w-3/4 bg-red-300">
+        <ul class="text-white font-barlow-regular pt-24 pl-6 text-base">
+          <li class="">
+            <span class="">00</span>
+            <a href="index.html" class="uppercase">Home</a>
+          </li>
+          <li class="">
+            <span class="">01</span>
+            <a href="destination-moon.html" class="uppercase">Destination</a>
+          </li>
+          <li class="">
+            <span class="">02</span>
+            <a href="crew-commander.html" class="uppercase">Crew</a>
+          </li>
+          <li class="">
+            <span class="">03</span>
+            <a href="technology-vehicle.html" class="uppercase">Technology</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="rule text-center flex flex-col items-center py-6">
+    <div class="flex flex-col items-center">
+      <p class="uppercase text-white font-bellefair flex gap-x-4">
+        <span class="font-barlow-condensed font-semibold">02</span> 
+        Meet your crew
+      </p>
+      
+    </div>
+    <img src="assets/crew/image-douglas-hurley.webp" alt="douglas" class="">
+  </main>
 
   00 Home
   01 Destination
