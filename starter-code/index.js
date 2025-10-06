@@ -11,4 +11,4 @@ hburger.addEventListener('click', () => {
     hburger.setAttribute('src', 'assets/shared/icon-hamburger.svg');
     navMenu.classList.add('hidden');
   }
-})
+});
