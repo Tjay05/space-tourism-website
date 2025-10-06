@@ -14,10 +14,12 @@
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="bg-[url(/starter-code/assets/home/background-home-mobile.jpg)] bg-cover bg-no-repeat">
+<body class="bg-[url(/starter-code/assets/home/background-home-mobile.jpg)] md:bg-[url(/starter-code/assets/home/background-home-tablet.jpg)] bg-cover bg-no-repeat">
   <header class="sticky top-0 font-barlow-condensed">
     <nav class="rule py-6 flex items-center justify-between md:w-full md:pt-0">
-      <img src="assets/shared/logo.svg" alt="logo" class="md:mx-10">
+      <a href="index.html" class="md:mx-10">
+        <img src="assets/shared/logo.svg" alt="logo">
+      </a>
       <button class="z-99 md:hidden">
         <img id="hamburger" src="assets/shared/icon-hamburger.svg" alt="hamburger" class="">
       </button>
@@ -47,15 +49,15 @@
     </nav>
   </header>
 
-  <main class="rule text-center flex flex-col items-center py-6">
-    <div class="">
-      <p class="uppercase text-lightblue font-bellefair">So, you want to travel to</p>
-      <h1 class="text-white uppercase text-7xl font-bellefair my-8">Space</h1>
-      <p class="text-sm/6 text-lightblue font-barlow-regular">
+  <main class="rule text-center flex flex-col items-center py-6 md:my-24">
+    <div class="rule w-[92%] md:w-[74%]">
+      <p class="uppercase text-lightblue font-barlow-condensed md:text-3xl tracking-widest">So, you want to travel to</p>
+      <h1 class="text-white uppercase text-7xl font-bellefair my-8 md:text-[144px]">Space</h1>
+      <p class="text-sm/6 text-lightblue font-barlow-regular md:text-base/7">
         Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!
       </p>
     </div>
-    <a href="" class="rounded-full bg-white px-8 py-14 uppercase font-bellefair text-lg mt-32">Explore</a>
+    <a href="destination-moon.html" class="rounded-full bg-white px-8 py-14 uppercase font-bellefair text-lg mt-24 md:text-4xl md:mt-16 md:px-14 md:py-28 text-darkblue">Explore</a>
   </main>
 
   <script defer src="index.js"></script>
