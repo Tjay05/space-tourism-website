@@ -14,7 +14,9 @@
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="bg-[url(/starter-code/assets/destination/background-destination-mobile.jpg)] md:bg-[url(/starter-code/assets/destination/background-destination-tablet.jpg)] lg:bg-[url(/starter-code/assets/destination/background-destination-desktop.jpg)] bg-cover bg-no-repeat h-[100%]">
+<body 
+  class="bg-[url(/starter-code/assets/destination/background-destination-mobile.jpg)] md:bg-[url(/starter-code/assets/destination/background-destination-tablet.jpg)] lg:bg-[url(/starter-code/assets/destination/background-destination-desktop.jpg)] bg-cover bg-no-repeat h-[100%] md:h-[100vh]"
+>
   <header class="sticky top-0 font-barlow-condensed">
     <nav class="rule py-6 flex items-center justify-between md:w-full md:pt-0 lg:py-8">
       <a href="index.html" class="md:mx-10 lg:mx-14">
@@ -50,17 +52,17 @@
     </nav>
   </header>
 
-  <main class="rule text-center flex flex-col items-center py-6 md:py-4 md:my-0 lg:flex-row lg:justify-between lg:w-[78%]">
-    <div class="flex flex-col items-center md:w-full">
-      <p class="uppercase text-white font-barlow-condensed tracking-widest text-base flex gap-x-4 md:place-self-start md:text-2xl">
+  <main class="rule text-center flex flex-col items-center py-6 md:py-4 md:my-0 lg:flex-row lg:justify-between lg:w-[78%] lg:pb-24">
+    <div class="flex flex-col items-center md:w-full lg:gap-y-36 lg:items-start">
+      <p class="uppercase text-white font-barlow-condensed tracking-widest text-base flex gap-x-4 md:place-self-start md:text-2xl lg:text-[28px]">
         <span class="font-semibold text-white/25">01</span> 
         Pick your destination
       </p>
-      <img src="assets/destination/image-moon.webp" alt="moon" class="my-12 w-[40%] md:my-18"/>
+      <img src="assets/destination/image-moon.webp" alt="moon" class="my-12 w-[40%] md:my-18  lg:m-0 lg:w-[60%]"/>
     </div>
-    <div class="place-self-start w-full md:mx-auto md:w-[74%]">
-      <nav class="w-full md:w-[80%] md:mx-auto text-sm md:text-base">
-        <ul class="flex w-3/4 mx-auto justify-around items-center text-lightblue font-barlow-condensed tracking-widest uppercase">
+    <div class="place-self-start w-full md:mx-auto md:w-[74%] lg:place-self-end lg:text-left lg:w-[65%]">
+      <nav class="w-full md:w-[80%] md:mx-auto text-sm md:text-base lg:mx-0">
+        <ul class="flex w-3/4 mx-auto justify-around items-center text-lightblue font-barlow-condensed tracking-widest uppercase lg:mx-0">
           <li><a href="destination-moon.html" class="text-white pb-2 border-b-2 border-white">Moon</a></li>
           <li><a href="destination-mars.html" class=" pb-2 border-b-2 border-transparent">Mars</a></li>
           <li><a href="destination-europa.html" class=" pb-2 border-b-2 border-transparent">Europa</a></li>
@@ -69,15 +71,15 @@
       </nav>
       <section class="mt-10">
         <h2 class="text-white uppercase text-6xl font-bellefair my-7 md:text-[80px]">Moon</h2>
-        <p class="text-[15px]/7 text-lightblue font-barlow-regular border-b-white/25 border-b pb-5 md:text-base/8">
+        <p class="text-[15px]/7 text-lightblue font-barlow-regular border-b-white/25 border-b pb-5 md:text-base/8 lg:text-lg/9">
           See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
         </p>
-        <footer class="flex flex-col mt-5 mb-3 uppercase gap-y-6 md:flex-row md:justify-between md:w-3/4 mx-auto">
-          <div class="flex flex-col gap-y-2 items-center">
+        <footer class="flex flex-col mt-5 mb-3 uppercase gap-y-6 md:flex-row md:justify-between md:w-3/4 mx-auto lg:mt-8 lg:mx-0 lg:w-[80%]">
+          <div class="flex flex-col gap-y-2 items-center lg:items-start">
             <p class="text-lightblue font-barlow-condensed text-sm tracking-widest md:text-base">Avg. distance</p>
             <span class="text-white font-bellefair text-[28px]">384,400 km</span>
           </div>
-          <div class="flex flex-col gap-y-2 items-center">
+          <div class="flex flex-col gap-y-2 items-center lg:items-start">
             <p class="text-lightblue font-barlow-condensed text-sm tracking-widest md:text-base">Est. travel time</p>
             <span class="text-white font-bellefair text-[28px]">3 days</span>
           </div>
