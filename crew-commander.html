@@ -9,34 +9,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon-32x32.png">
   <link rel="stylesheet" href="/src/output.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="bg-[url(/src/assets/crew/background-crew-mobile.jpg)] md:bg-[url(/src/assets/crew/background-crew-tablet.jpg)] lg:bg-[url(/src/assets/crew/background-crew-desktop.jpg)] bg-cover bg-no-repeat">
-  <header class="relative font-barlow-condensed">
-    <nav class="rule py-6 flex items-center justify-between">
-      <img src="src/assets/shared/logo.svg" alt="logo" class="">
-      <button class="z-99">
-        <img src="src/assets/shared/icon-hamburger.svg" alt="hamburger" class="">
+<body 
+  class="bg-[url(/src/assets/crew/background-crew-mobile.jpg)] md:bg-[url(/src/assets/crew/background-crew-tablet.jpg)] lg:bg-[url(/src/assets/crew/background-crew-desktop.jpg)] bg-cover bg-no-repeat h-[100%] md:h-[100vh]"
+>
+  <header class="sticky top-0 font-barlow-condensed">
+    <nav class="rule py-6 flex items-center justify-between md:w-full md:pt-0 lg:py-8">
+      <a href="index.html" class="md:mx-10 lg:mx-14">
+        <img src="src/assets/shared/logo.svg" alt="logo">
+      </a>
+      <div class="hidden lg:inline-block lg:w-[39%] border-b-2 border-b-white/25 absolute left-39 z-10"></div>
+      <button class="z-99 md:hidden">
+        <img id="hamburger" src="src/assets/shared/icon-hamburger.svg" alt="hamburger" class="">
       </button>
-      <div class="absolute hidden top-0 right-0 h-[100vh] w-3/4 bg-red-300">
-        <ul class="text-white font-barlow-regular pt-24 pl-6 text-base">
-          <li class="">
-            <span class="">00</span>
+      <div
+        id="nav-menu"
+        class="fixed bottom-0 hidden top-0 right-0 w-[67%] bg-[#0B0D17]/15 md:bg-white/5 backdrop-blur-xl z-9 md:inline-block md:relative md:overflow-visible md:w-full lg:w-[53%]"
+      >
+        <ul class="flex mt-10 flex-col gap-y-6 text-white font-barlow-condensed pt-24 pl-6 text-base tracking-widest md:flex-row md:m-0 md:gap-0 md:p-0 md:mr-10 md:ml-24 md:justify-between">
+          <li class="flex gap-x-4 md:py-8">
+            <span class="font-bold">00</span>
             <a href="index.html" class="uppercase">Home</a>
           </li>
-          <li class="">
-            <span class="">01</span>
+          <li class="flex gap-x-4 md:py-8">
+            <span class="font-bold">01</span>
             <a href="destination-moon.html" class="uppercase">Destination</a>
           </li>
-          <li class="">
-            <span class="">02</span>
+          <li class="border-r-2 md:border-0 md:border-b-2 flex gap-x-4 md:py-8">
+            <span class="font-bold md:hidden lg:inline-block">02</span>
             <a href="crew-commander.html" class="uppercase">Crew</a>
           </li>
-          <li class="">
-            <span class="">03</span>
+          <li class="flex gap-x-4 md:py-8">
+            <span class="font-bold">03</span>
             <a href="technology-vehicle.html" class="uppercase">Technology</a>
           </li>
         </ul>
@@ -44,29 +52,29 @@
     </nav>
   </header>
 
-  <main class="rule text-center flex flex-col items-center py-6">
-    <div class="flex flex-col items-center">
-      <p class="uppercase text-white font-bellefair flex gap-x-4">
-        <span class="font-barlow-condensed font-semibold">02</span> 
-        Meet your crew
-      </p>
-      
+  <main class="rule text-center flex flex-col items-center py-6 md:py-4 md:my-0 lg:flex-row lg:justify-between lg:w-[78%] lg:pb-24">
+    <p class="uppercase text-white font-barlow-condensed tracking-widest text-base flex gap-x-4 md:place-self-start md:text-2xl lg:text-[28px]">
+      <span class="font-semibold text-white/25">02</span> 
+      Meet your crew
+    </p>
+    <div class="flex flex-col items-center mt-14 md:w-full lg:gap-y-36 lg:items-start">
+      <section class="text-center mb-12">
+        <p class="text-white/50 font-bellefair text-lg uppercase">Commander</p>
+        <h2 class="text-white uppercase text-2xl/11 font-bellefair tracking-wide">Douglas Hurley</h2>
+        <p class="font-barlow text-lightblue text-base/6 mt-6 mb-16">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+        </p>
+        <div class="w-[25%] items-center mx-auto flex justify-between">
+          <span class="rounded-full bg-white w-3 h-3"></span>
+          <span class="rounded-full bg-white/17 w-3 h-3"></span>
+          <span class="rounded-full bg-white/17 w-3 h-3"></span>
+          <span class="rounded-full bg-white/17 w-3 h-3"></span>
+        </div>
+      </section>
+      <img src="src/assets/crew/image-douglas-hurley.webp" alt="douglas" class="w-[78%] mb-4">
     </div>
-    <img src="src/assets/crew/image-douglas-hurley.webp" alt="douglas" class="">
   </main>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Commander
-  Douglas Hurley
-
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
+  <script defer src="index.js"></script>
 </body>
 </html>
