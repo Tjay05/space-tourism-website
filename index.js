@@ -5,10 +5,10 @@ const hburger = $('hamburger');
 
 hburger.addEventListener('click', () => {
   if(navMenu.classList.contains('hidden')) {
-    hburger.setAttribute('src', 'assets/shared/icon-close.svg');
+    hburger.setAttribute('src', 'src/assets/shared/icon-close.svg');
     navMenu.classList.remove('hidden');
   } else {
-    hburger.setAttribute('src', 'assets/shared/icon-hamburger.svg');
+    hburger.setAttribute('src', 'src/assets/shared/icon-hamburger.svg');
     navMenu.classList.add('hidden');
   }
 });
